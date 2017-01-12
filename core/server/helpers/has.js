@@ -45,8 +45,8 @@ has = function (options) {
         return;
     }
 
-    tagsOk = tagList && evaluateTagList(tagList, tags) || false;
-    authorOk = authorList && evaluateAuthorList(authorList, author) || false;
+    tagsOk = tagList && evaluateTagList(tagList, tags);
+    authorOk = authorList && evaluateAuthorList(authorList, author);
 
     if (tagsOk || authorOk) {
         return options.fn(this);
